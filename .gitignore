@@ -1,0 +1,8 @@
+#checkpoints
+v2/checkpoints/*
+
+#py_cache
+v2/model/__pycache__
+
+#overview
+Relation_Extraction.txt

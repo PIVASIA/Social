@@ -1,0 +1,48 @@
+Product
+    - Overview
+        - Background
+            + Khách hàng: 7-Eleven, GS25, CircleK....
+            + Mục tiêu: Khách hàng cập nhật thông tin của đối thủ cạnh tranh, để đưa ra chiến lược phù hợp.
+            + Trở ngại: Quá nhiều thông tin, khó chắt lọc.
+            + Lợi ích: Lựa chọn những thông tin cần thiết, quan trọng.
+        - Value Proposition
+            + Sản phẩm: Dịch vụ thu thập dữ liệu và chọn lọc nội dung sử dụng ML từ các nguồn phổ biến(Facebook, website..)
+            + Alleviates: Hiển thị thông tin đối thủ kịp thời để khách hàng sử dụng.
+            + Advantages: Khách hàng không cần xem thông tin ở nhiều nơi, tốn công sức phân tích.
+        - Objectives: 
+            + Crawl dữ liệu đầy đủ dựa theo yêu cầu khách hàng.
+            + Chọn lọc thông tin cần thiết.
+            + Phân loại nội dung.
+    - Solution
+            + ML dự đoán chính xác các nội dung cần thiết.
+            + Sàng lọc nội dung trùng.
+            + Khách hàng lựa chọn thêm mục thông tin.
+        - Feasibility
+            + Tập dữ liệu đầy đủ, tuy nhiên cần sàng lọc kỹ càng.
+            + Người đánh giá sau cùng là khách hàng.
+Engineering: Text_classifier, NER, Relation_Extract
+    - Data
+            + Random 10% dữ liệu cho chuyên gia gán nhãn, kiểm thử với full dữ liệu. Nếu đạt kết quả khớp 95% thì pass.
+            + Loại bỏ toàn bộ nội dung spam, không có ý nghĩa.
+        - Labeling: Custom theo từng bài toán trong pipeline
+    - Evaluation
+        - Metrics: Lựa chọn phương thức đánh giá học máy phù hợp.
+        - Offline evaluation: Xây dựng 1 bộ dữ liệu test tổng quan cho Transferlearning
+        - Online evaluation: Đánh giá dựa trên feedback khi đã triển khai.
+    - Modeling
+            + End-to-end utility: Xây dựng hệ thống End-to-end để dễ dàng triển khai, đánh giá.
+            + Manual before ML: Xây dựng các thành phần xác định -> Kết hợp thành baseline
+            + Augment vs. automate: Kiểm định chất lượng đầu ra thủ công trước khi chạy tự động hoàn toàn.
+            + Internal vs. external: Sử dụng các phiên bản đầu tiên để thu thập dữ liệu, nhận phản hồi trước khi giao cho khách hàng.
+            + Thorough: Mọi phương pháp càn được kiểm tra, đánh giá, so sánh.
+        - Feedback:
+            + Luôn luôn thực thi việc kiểm tra
+            + Cho phép người dùng báo cáo về vấn đề
+            + Tham gia với các bên liên quan để xác định giá trị của hệ thống.
+Project
+    - Team: AI
+    - Deliverables
+    - Timeline:
+        + V1: Text preprocess, Text_classifier
+        + V2: Text preprocess, Text_classifier, Name_Entity_Recognition
+        + V3: Text preprocess, Text_classifier, Name_Entity_Recognition, Relation_Extract

@@ -1,0 +1,16 @@
+Text_classifier
+    - Data: Crawl Page Fb: GS25, CircleK, 7-Eleven
+        - Labeling:
+            + Tối thiểu 50-100 sample ứng với mỗi label
+            + List label: San_pham, muc_giam_gia, date, gia_san_pham, vi_tri, so_nha, ten_duong, ten_thon_lang_todanpho, ten_phuong_xa_thitran, ten_quan_huyen_thanhpho, ten_tinh_thanh_pho (11)
+    - Evaluation
+        - Metrics: F1-score: 0.85
+        - Offline evaluation
+        - Online evaluation
+    - Modeling
+            + End-to-end utility
+            + Manual before ML
+            + Augment vs. automate
+            + Internal vs. external
+            + Thorough
+        - Feedback

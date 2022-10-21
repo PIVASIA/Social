@@ -1,0 +1,16 @@
+Text_classifier
+    - Data: Crawl Page Fb: GS25, CircleK, 7-Eleven
+        - Labeling:
+            + Tối thiểu 50-100 sample ứng với mỗi label
+            + List label: brand_acitivity, brand_community, brand_emotional,brand_resonance, event_brand, event_current,franchise_recruitment, misc, partner_info,product_educational, product_info, promotion_info, recruitment, store_info. (14)
+    - Evaluation
+        - Metrics: F1-score
+        - Offline evaluation
+        - Online evaluation
+    - Modeling
+            + End-to-end utility
+            + Manual before ML
+            + Augment vs. automate
+            + Internal vs. external
+            + Thorough
+        - Feedback
