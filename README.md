@@ -20,4 +20,4 @@ A JSON file, list of items:  _{"text": "", "fid": "", "offset": 0}_
 
 List of items: _([Texts], [Labels])_
 
-Download checkpoints from [GGdrive](shorturl.at/jMP16)
+Download checkpoints from [GGdrive](https://drive.google.com/drive/folders/1qzCHLSSuBRi857rlsUWpDwxhvvpreoUk?usp=share_link)
